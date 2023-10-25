@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda telefonica</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/agenda.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/agenda.png" alt="agenda" />
+        <h1>Agenda</h1>
+      </header>
+      <form id="form-lista">
+        <input
+          type="text"
+          required
+          placeholder="Nome do contato"
+          id="nome-contato"
+        />
+        <input
+          id="numero-telefone"
+          type="text"
+          required
+          placeholder="(XX) XXXX-XXXX"
+        />
+        <button type="submit">Adicionar</button>
+      </form>
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>Nome do contato</th>
+            <th>Número do contato</th>
+            <th>Opções</th>
+          </tr>
+        </thead>
+        <tbody id="contatos">
+          <!-- A lista de contatos será preenchida aqui dinamicamente -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
